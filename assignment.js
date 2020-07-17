@@ -90,7 +90,7 @@ function brickCalculator(value){
 
 //tinyFriends
 
-function tinyFriends(names) {
+function tinyFriend(names) {
     let nameLength = Infinity;  
     let shortestName = "";  //here it will count empty string or lowest value of string
 
@@ -106,7 +106,7 @@ function tinyFriends(names) {
 }
 
 //here we input number & string.but function only count string
-let inputMultipleNames = tinyFriends(['Rakib','Hossainul','Inzamam',4,'Robinhoot','Sharukh Khan',]); 
+let inputMultipleNames = tinyFriend(['Rakib','Hossainul','Inzamam',4,'Robinhoot','Sharukh Khan',]); 
 
 
 console.log("Smallest name:",inputMultipleNames);

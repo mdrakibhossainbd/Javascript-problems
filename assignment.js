@@ -45,50 +45,63 @@ let inputItemsValue=woodCalculator([16,4,2]);
 
 
 
+
 //brickCalculator Start
 
 
 function brickCalculator(value){
 
-    if(isNaN(value)){   
+  if(isNaN(value)){   
 
-      console.log(value + " Is not a Number ");   //here we check the value is number or string
-    }
+    console.log(value + " Is not a Number ");   //here we check the value is number or string
+  }
 
-   else{
+ else{
+    
+   if(value<=10){
       
-     if(value<=10){
-        
-       let floorHeight=15;     // 1st to 10th, floor height 15 feet
+     let floorHeight=15;     // 1st to 10th, floor height 15 feet
 
-       let totalBrick=(value*1000)*floorHeight;
-       console.log("Total Brick Need:","Floor=",value,"  ,Need Pieces of Brick=",totalBrick);
-        
-     }
+     let totalBrick=(value*1000)*floorHeight;
+     console.log("Total Brick Need:","Floor=",value,"  ,Need Pieces of Brick=",totalBrick);
+      
+   }
 
-    else if(value>=11 && value<=20){
+  else if(value>=11 && value<=20){
 
-       let floorHeight=12;     // 11th to 20 , floor height 15 feet
+     let floorHeight=12; // 11th to 20 , floor height 12 feet
+     
+     let secondTenFloor=value-10;
+     let secondTenFloorBrick=secondTenFloor*1000;
+   
+     let totalBrickNeed=150000+(floorHeight*secondTenFloorBrick);
+     console.log("Total Brick Need:","Floor=",value," ,Need Pieces of Brick=",totalBrickNeed);
 
-       let totalBrick=(value*1000)*floorHeight;
-       console.log("Total Brick Need:","Floor=",value," ,Need Pieces of Brick=",totalBrick);
-     }
-     else if(value>=21 ){
+   }
+   else if(value>=21 ){
 
-       let floorHeight=10;     // 21 to avobe floor height 15 feet
-       let totalBrick=(value*1000)*floorHeight;
-       console.log("Total Brick Need:","Floor=",value," ,Need Pieces of Brick=",totalBrick);
-     }
-    }
- }
-
- let inputFloorValue=brickCalculator(15);   //here input value for floor
-
-//brickCalculator  End
+     let floorHeight=10;     // 21 to avobe floor height 10 feet
+     let firstTenFloorBrickNeed=150000;
+     let secondTenFloorBrickNeed=120000;
+     let toralTwentyFloorBrickNeed=firstTenFloorBrickNeed+secondTenFloorBrickNeed;
 
 
+     let aboveFloor=value-20;
+     let aboveFloorBrick=aboveFloor*1000;
+   
+     let totalBrickNeed=toralTwentyFloorBrickNeed+(floorHeight*aboveFloorBrick);
+     console.log("Total Brick Need:","Floor=",value," ,Need Pieces of Brick=",totalBrickNeed);
+   }
+  }
+}
 
-//tinyFriends
+let inputFloorValue=brickCalculator(17);   //here input value for floor
+
+//brickCalculator  End   
+
+ 
+
+//tinyFriend Start
 
 function tinyFriend(names) {
     let nameLength = Infinity;  
@@ -111,4 +124,4 @@ let inputMultipleNames = tinyFriend(['Rakib','Hossainul','Inzamam',4,'Robinhoot'
 
 console.log("Smallest name:",inputMultipleNames);
 
-//tinyFriends  End
+//tinyFriend  End

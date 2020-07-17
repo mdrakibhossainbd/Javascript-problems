@@ -62,7 +62,7 @@ function brickCalculator(value){
        let floorHeight=15;     // 1st to 10th, floor height 15 feet
 
        let totalBrick=(value*1000)*floorHeight;
-       console.log("Total Brick Need:","Floor=",value,"  ,Pieces of Brick=",totalBrick);
+       console.log("Total Brick Need:","Floor=",value,"  ,Need Pieces of Brick=",totalBrick);
         
      }
 
@@ -71,13 +71,13 @@ function brickCalculator(value){
        let floorHeight=12;     // 11th to 20 , floor height 15 feet
 
        let totalBrick=(value*1000)*floorHeight;
-       console.log("Total Brick Need:","Floor=",value,"  ,Pieces of Brick=",totalBrick);
+       console.log("Total Brick Need:","Floor=",value," ,Need Pieces of Brick=",totalBrick);
      }
      else if(value>=21 ){
 
        let floorHeight=10;     // 21 to avobe floor height 15 feet
        let totalBrick=(value*1000)*floorHeight;
-       console.log("Total Brick Need:","Floor=",value,"  ,Pieces of Brick=",totalBrick);
+       console.log("Total Brick Need:","Floor=",value," ,Need Pieces of Brick=",totalBrick);
      }
     }
  }

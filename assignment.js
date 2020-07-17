@@ -34,9 +34,9 @@ function woodCalculator(value){
    }
    console.log("Input value of","[Chair,","Tabel,","Bed]:",value,", total amount of wood needs =",sum,"cubic feet");
 }
-   /*woodCalculator.indexOf[0]  value for Chair
-    woodCalculator.indexOf[1]   value for Table
-    woodCalculator.indexOf[0]   value for Bed*/ 
+   /*woodCalculator[0]  value for Chair
+    woodCalculator[1]   value for Table
+    woodCalculator[2]   value for Bed*/ 
 
 let inputItemsValue=woodCalculator([16,4,2]);                                             
 
